@@ -1,10 +1,13 @@
 const path = require("path");
 const pathModule = require("path");
-console.log("basename", pathModule.basename(__filename));
-console.log("dirname", pathModule.dirname(__filename));
-console.log("extname", pathModule.extname(__filename));
-// console.log("parse", pathModule.parse(__filename));
-console.log(pathModule.parse(__filename));
-const normalize = pathModule.normalize("/users/.alfjwelkj//../document");
-console.log(normalize);
+console.log("filename", path.basename(__filename));
+console.log("dirname", path.dirname(__filename));
+
+// console.log("basename", pathModule.basename(__filename));
+// console.log("dirname", pathModule.dirname(__filename));
+// console.log("extname", pathModule.extname(__filename));
+// // console.log("parse", pathModule.parse(__filename));
+// console.log(pathModule.parse(__filename));
+// const normalize = pathModule.normalize("/users/.alfjwelkj//../document");
+// console.log(normalize);
 // console.log(pathModule.join("/user", "module", "path", "category"));
